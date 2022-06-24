@@ -28,9 +28,7 @@ const App = ({ Component, pageProps }) => {
       <FontFace />
       <Script src="https://status.sivu.tk/widget/script.js" />
       <Script src='/cannyuser.js' />
-      <Script src='/changelog.js' 
-        strategy = "afterInteractive"
-      />
+      <Script src='/changelog.js' />
       <Script src="https://unpkg.com/feedbackfin@^1" defer />
       <Script src="/fin.js" /> 
     </>

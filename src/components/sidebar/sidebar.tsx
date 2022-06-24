@@ -152,6 +152,11 @@ const mainNavLinks = [
     href: '/feature-req',
     label: 'Feature Request',
   },
+  {
+    icon: <FaPrayingHands className='whiteicon'/>,
+    href: '/change-log',
+    label: 'Change log',
+  },
 ]
 
 const MainNavLinkGroup = (props: ListProps) => {

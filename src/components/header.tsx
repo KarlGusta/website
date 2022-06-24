@@ -25,6 +25,7 @@ import SponsorButton from './support-us'
 import { GithubIcon } from 'components/icons'
 import siteConfig from 'configs/site-config'
 
+
 function HeaderContent() {
   const mobileNav = useDisclosure()
 
@@ -78,7 +79,7 @@ function HeaderContent() {
             <Link
               isExternal
               aria-label='Go to Chakra UI GitHub page'
-              data-canny-changelog
+              href='/change-log'
             >
               <Icon
                 as={FaNewspaper}

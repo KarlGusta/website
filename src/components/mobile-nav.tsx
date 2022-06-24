@@ -140,6 +140,7 @@ export function MobileNavContent(props: MobileNavContentProps) {
                     {"Contribute"}
                   </NavLink>
                   <NavLink href='/feature-req'>{"Feature Request"}</NavLink>
+                  <NavLink href='/change-log'>{"Change log"}</NavLink>
                 </Grid>
               </Box>
 
