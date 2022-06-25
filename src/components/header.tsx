@@ -17,11 +17,12 @@ import {
 import { useViewportScroll } from 'framer-motion'
 import NextLink from 'next/link'
 import React from 'react'
-import { FaMoon, FaSun, FaBook, FaNewspaper, FaThumbsUp } from 'react-icons/fa'
+import { FaMoon, FaSun } from 'react-icons/fa'
 import Search from './algolia-search'
 import Logo from './logo'
 import { MobileNavButton, MobileNavContent } from './mobile-nav'
 import SponsorButton from './support-us'
+import Changelog from 'components/canny-changelog'
 import { GithubIcon } from 'components/icons'
 import siteConfig from 'configs/site-config'
 
@@ -76,21 +77,7 @@ function HeaderContent() {
                 _hover={{ color: 'gray.600' }}
               />
             </Link>
-            <Link
-              isExternal
-              aria-label='Go to Chakra UI GitHub page'
-              href='/change-log'
-            >
-              <Icon
-                as={FaNewspaper}
-                data-canny-changelog
-                display='block'
-                transition='color 0.2s'
-                w='5'
-                h='5'
-                _hover={{ color: 'gray.600' }}
-              />
-            </Link>
+          <Changelog />
           </HStack>
           <IconButton
             size='md'
