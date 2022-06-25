@@ -29,6 +29,6 @@
       "module": "CommonJS"
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/alsearch.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/alsearch.jsx", "src/components/canny-changelog.jsx"],
   "exclude": ["node_modules"]
 }
