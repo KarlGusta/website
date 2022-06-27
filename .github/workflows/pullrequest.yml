@@ -7,6 +7,10 @@ on:
 jobs:
   assign-pr-reviewers:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
     steps:
     - name: "Assign Reviewers to PR"
       uses: itsOliverBott/assign-pr-reviewers@release
