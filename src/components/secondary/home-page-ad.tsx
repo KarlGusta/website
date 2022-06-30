@@ -1,24 +1,43 @@
-import { Badge, Box, Flex, Heading, HStack, Text, useColorModeValue, Divider } from '@chakra-ui/react'
+import {
+  Badge,
+  Box,
+  Flex,
+  Heading,
+  HStack,
+  Text,
+  useColorModeValue,
+  Tag,
+  Divider,
+} from '@chakra-ui/react'
 import * as React from 'react'
 import { FiArrowRight } from 'react-icons/fi'
 import { getUrl } from './get-url'
 import Container from 'components/container'
 
 export const ChakraProAd = () => (
-  <Box as='section' bg={useColorModeValue('#white', 'gray.800')} color='#2d3748' overflow='hidden'>
+  <Box
+    as='section'
+    bg={useColorModeValue('#white', 'gray.800')}
+    color='#2d3748'
+    overflow='hidden'
+  >
     <Container pt='10' pb='0'>
       <Flex align='center' direction='column' textAlign='center' mb='10'>
-        <Text casing='uppercase' letterSpacing='wide' fontWeight='bold' color={useColorModeValue('#2d3748', 'white')}>
-          {"Just launched"}{' '}
-          <Badge
-            colorScheme='yellow'
-            variant='solid'
-            color={useColorModeValue('gray.800', '#fffbdf')}
-            mt='-1'
-            ml='2'
+        <Text
+          casing='uppercase'
+          letterSpacing='wide'
+          fontWeight='bold'
+          color={useColorModeValue('#2d3748', 'white')}
+        >
+          {'Just launched'}{' '}
+          <Tag
+            size={'sm'}
+            bg={useColorModeValue('#fdc800', 'yellow.800')}
+            ml={2}
+            color={'white'}
           >
-            {"New 🎉"}
-          </Badge>
+            New 🎉
+          </Tag>
         </Text>
         <Heading
           mt='4'
@@ -31,22 +50,34 @@ export const ChakraProAd = () => (
         >
           <Box
             as='span'
-            bgGradient={useColorModeValue('linear(to-r, #2d3748, #2d3748)', 'linear(to-r, white, white)')}
+            bgGradient={useColorModeValue(
+              'linear(to-r, #2d3748, #2d3748)',
+              'linear(to-r, white, white)',
+            )}
             bgClip='text'
           >
-            {"Try"}
+            {'Try'}
           </Box>{' '}
           <Box
             as='span'
             bgGradient={'linear(to-r, blue.400, blue.400)'}
             bgClip='text'
           >
-            {"Sivu"}
+            {'Sivu'}
           </Box>{' '}
-          {"today!"}
+          {'today!'}
         </Heading>
-        <Text maxW='48ch' mx='auto' fontSize='lg' mt='6' opacity={0.8} color={useColorModeValue('black', 'white')}>
-          {"We've just launched Sivu! Why not try and get a website up and running today? It's free!"}
+        <Text
+          maxW='48ch'
+          mx='auto'
+          fontSize='lg'
+          mt='6'
+          opacity={0.8}
+          color={useColorModeValue('black', 'white')}
+        >
+          {
+            "We've just launched Sivu! Why not try and get a website up and running today? It's free!"
+          }
         </Text>
         <HStack
           mt='6'
@@ -62,7 +93,7 @@ export const ChakraProAd = () => (
           transition='all 0.2s'
           _hover={{ bg: ' gray.200' }}
         >
-          <Text>{"Tutorials"}</Text>
+          <Text>{'Tutorials'}</Text>
           <Box as={FiArrowRight} display='inline-block' ml='2' />
         </HStack>
       </Flex>
