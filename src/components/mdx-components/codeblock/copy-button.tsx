@@ -22,10 +22,10 @@ function CopyButton({ code, ...props }: CopyButtonProps) {
       right='1.25em'
       {...props}
       onClick={onCopy}
-    > Copy
+    > 
       {hasCopied
-        ? t('component.mdx-components.copy-button.copied')
-        : t('component.mdx-components.copy-button.copy')}
+        ? 'Copied!'
+        : 'Copy'}
     </Button>
   )
 }
